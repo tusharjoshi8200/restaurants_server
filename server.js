@@ -84,11 +84,11 @@ app.get("/api/restaurants/:id", (req, res) => {
         data: data,
         message: "get record successfully",
       })
-      .catch((err) => {
+      
+  }).catch((err) => {
         res.status(400);
         res.json(err);
-      });
-  });
+      });;
 });
 
 app.put("/api/restaurants/:id", (req, res) => {
