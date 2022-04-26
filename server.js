@@ -14,7 +14,7 @@ const path = require("path");
 const cors = require("cors");
 const app = express();
 
-const RestaurantDB = require("./modules/restaurantDB.js");
+const RestaurantDB = require("./modules/RestaurantDB");
 const db = new RestaurantDB();
 
 app.use(cors());
